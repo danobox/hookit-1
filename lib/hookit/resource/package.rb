@@ -40,7 +40,7 @@ module Hookit
       protected
 
       def install_package
-        `#{pkgin} -y in #{package}`
+        `#{pkgin} -yV in #{package}`
 
         code = $?.exitstatus
         if not code == 0
